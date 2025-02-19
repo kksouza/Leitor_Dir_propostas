@@ -1,0 +1,48 @@
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Extração de Metadados PDF</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Extração de Metadados de Arquivos PDF</h1>
+    <input type="file" id="csvFile" accept=".csv">
+    <div id="output">
+      <!-- Output table will be rendered here -->
+    </div>
+
+    <div class="dashboards-container">
+      <h2>Dashboards de Análise</h2>
+
+      <div class="dashboard" id="dashboard-client">
+        <h3>Distribuição de Documentos por Cliente</h3>
+        <canvas id="clientChart"></canvas>
+      </div>
+
+      <div class="dashboard" id="dashboard-evolution">
+        <h3>Evolução das Propostas ao Longo do Tempo</h3>
+        <canvas id="evolutionChart"></canvas>
+      </div>
+
+      <div class="dashboard" id="dashboard-tags">
+        <h3>Categorias (Tags) Mais Frequentes</h3>
+        <canvas id="tagsChart"></canvas>
+      </div>
+
+      <div class="dashboard" id="dashboard-versions">
+        <h3>Distribuição das Versões dos Documentos</h3>
+        <canvas id="versionsChart"></canvas>
+      </div>
+
+      <div class="dashboard" id="dashboard-directories">
+        <h3>Volume de Documentos por Diretório</h3>
+        <canvas id="directoriesChart"></canvas>
+      </div>
+    </div>
+  </div>
+  <script src="script.js" type="module"></script>
+</body>
+</html>
